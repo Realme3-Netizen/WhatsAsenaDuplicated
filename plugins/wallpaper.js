@@ -644,8 +644,8 @@ if (Config.WORKTYPE == 'private') {
         var i = Math.floor(621*Math.random())
 
         var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
-
-        await message.client.sendMessage(message.jid, Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Made by WhatsAsena'})
+ㅤ
+        await message.client.sendMessage(message.jid, Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: ''})
 
     }));
 }
@@ -1280,7 +1280,7 @@ else if (Config.WORKTYPE == 'public') {
 
         var respoimage = await axios.get(`${r_text[i]}`, { responseType: 'arraybuffer' })
 
-        await message.client.sendMessage(message.jid, Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'Made by WhatsAsena'})
+        await message.client.sendMessage(message.jid, Buffer.from(respoimage.data), MessageType.image, {mimetype: Mimetype.png, caption: 'ㅤ'})
 
     }));
 }
